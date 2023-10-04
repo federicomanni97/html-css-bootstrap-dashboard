@@ -13,6 +13,10 @@ header{
     background-color: var(--color-bg-search-bar);
 }
 
+.bg-sidebar{
+    background-color: #014cb6;
+}
+
 .border{
     border: 2px solid black;
 }
@@ -27,6 +31,10 @@ header{
 
 #logo-small img{
     height: 40px;
+}
+
+#stats-img img{
+    width: 100%;
 }
 
 #avatar-logo{
@@ -59,6 +67,7 @@ main{
 #main-content{
     width: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sizing-1{
@@ -87,6 +96,13 @@ li{
     position: absolute;
     top: 11px;
     left: 20px;
+}
+
+.fa-plus{
+    border: 1px solid var(--color-bg-search-bar);
+    padding: 10px;
+    margin: 0px 3px;
+    border-radius: 10px;
 }
 
 .fa-trash, .fa-pencil{
