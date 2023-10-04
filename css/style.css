@@ -9,8 +9,16 @@
     --color-nav-bar: #1b72e8;
 }
 
+header{
+    background-color: var(--color-bg-search-bar);
+}
+
 .border{
     border: 2px solid black;
+}
+
+#nav-bar{
+    height: 55px;
 }
 
 #big-logo img{
@@ -18,7 +26,11 @@
 }
 
 #logo-small img{
-    width: 40px;
+    height: 40px;
+}
+
+#avatar-logo{
+    height: 25px;
 }
 
 .wrapper{
@@ -75,6 +87,13 @@ li{
     position: absolute;
     top: 11px;
     left: 20px;
+}
+
+.fa-trash, .fa-pencil{
+    border: 1px solid var(--color-bg-search-bar);
+    color: grey;
+    padding: 5px;
+    margin: 0px 3px;
 }
 
 @media screen and (max-width:992px){
