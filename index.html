@@ -103,13 +103,85 @@
             <div class="row flex-md-row-reverse">
                 <div class="col-12 col-lg-2 col-md-3 py-3 justify-content-lg-end">
                   <span>Nuovo Studente</span>
-                  <span><i class="fa-regular fa-plus"></i></span>
+                  <!--offcanvas + -->
+                  <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-regular fa-plus text-light"></i></a>
+                  <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationTooltip01">Nome</label>
+                            <input type="text" class="form-control" id="validationTooltip01" placeholder="Nome" value="Mark" required>
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationTooltip02">Cognome</label>
+                            <input type="text" class="form-control" id="validationTooltip02" placeholder="Cognome" value="Otto" required>
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationTooltipUsername">E-mail</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                              </div>
+                              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
+                              <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationTooltip03">Città</label>
+                            <input type="text" class="form-control" id="validationTooltip03" placeholder="Città" required>
+                            <div class="invalid-tooltip">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationTooltip04">State</label>
+                            <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                            <div class="invalid-tooltip">
+                              Please provide a valid state.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationTooltip05">Zip</label>
+                            <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+                            <div class="invalid-tooltip">
+                              Please provide a valid zip.
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Salva</button>
+                      </form>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
                 </div>
                 <div class="col-12 col-lg-6 col-md-5 py-3 order-md-2">
                   <h3>Boolean</h3>
                   <span class="badge rounded-pill bg-sidebar p-2">Piano blaze</span>
                   <span class="badge rounded-pill bg-sidebar p-2">3 app</span>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+                  <span><i class="fa-solid fa-angles-right align-middle"></i></span>
                   <span class="badge rounded-pill bg-sidebar py-1 p-2"> + </span>
                 </div>
                 <div class="col-12 col-lg-4 col-md-4 py-3">
