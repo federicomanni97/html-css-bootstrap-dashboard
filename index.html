@@ -30,13 +30,11 @@
       <header class="sticky-top d-flex align-items-center">
         <nav class="container-fluid">
           <div class="row bg-white align-items-center" id="nav-bar">
-            <div id="big-logo" class="col-2 col-md-2 d-flex align-items-center d-none d-lg-block">
-              <img src="img/logo.svg" alt="logo" />
+            <div class="col-1 col-md-2 d-flex align-items-center">
+              <img class="d-lg-block d-none" id="big-logo" src="img/logo.svg" alt="logo" />
+              <img class="d-lg-none" id="logo-small" src="img/mobile-logo.png" alt="logo">
             </div>
-            <div id="logo-small" class="col-2 d-flex align-items-center d-lg-none">
-                <img src="img/mobile-logo.png" alt="logo">
-            </div>
-            <div class="col-9 col-md-9 col-lg-9 search">
+            <div class="col-10 col-md-9 col-lg-9 search">
                 <i class="fa fa-search"></i>
               <form class="d-flex" role="search">
                 <input
@@ -51,27 +49,27 @@
             <div
               class="col-1 col-md-1 d-flex align-items-center justify-content-between"
             >
-              <a href="" class="text-decoration-none"><i class="fa-solid fa-list text-secondary d-none d-lg-block"></i></a>
-              <a href="" class="text-decoration-none"><i class="fa-solid fa-circle-question text-secondary d-none d-lg-block"></i></a>
-              <a href="" class="text-decoration-none"><i class="fa-solid fa-ellipsis-vertical text-secondary d-none
-                d-lg-block "></i></a>
-                <!--inizio campanellina--> 
+                  <a href="" class="d-none d-lg-block text-decoration-none"><i class="fa-solid fa-list text-secondary"></i></a>
+                  <a href="" class="d-none d-lg-block text-decoration-none"><i class="fa-solid fa-circle-question text-secondary"></i></a>
+                  <a href="" class="d-none d-lg-block text-decoration-none"><i class="fa-solid fa-ellipsis-vertical text-secondary "></i></a>
+                <!--inizio dropdown bell--> 
                 <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle bg-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="" class="bg-white border-0"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bell text-warning"></i>
-                  </button>
+                  </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </div>
-                <!--fine campanellina-->
+                <!--fine dropdown bell-->
             </div>
           </div>
         </nav>
       </header>
       <main class="text-light">
+        
         <section id="sidebar" class="d-flex flex-column justify-content-between align-items-center py-4">
             <ul class="text-light mt-2 px-0 list-unstyled ">
               <li>
@@ -100,8 +98,9 @@
               <span class="d-none d-lg-inline-block">Admin</span>
             </div>
         </section>
-
+      
         <div id="main-content" class="">
+        
           <div class="container-fluid bg-primary text-light">
             <div class="row flex-column flex-lg-row-reverse">
                 <div class="col py-3 justify-content-lg-end">
@@ -121,196 +120,195 @@
                 </div>
             </div>    
           </div>
-
         
-        <div class="row">
-         <div class="col-12 col-lg-8">     
-          <div class="card">
-            <div class="card-header">
-                <h3>Prossime classi</h3>
-            </div>    
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" class="col-5">Nome</th>
-                    <th scope="col" class="col-2 d-none d-lg-table-cell">Data Inizio</th>
-                    <th scope="col" class="col-1 d-none d-lg-table-cell">ROI</th>
-                    <th scope="col" class="col-2">Stato</th>
-                    <th scope="col" class="col-3">Azioni</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 75</td>
-                    <td class="d-none d-lg-table-cell">16 Feb 2021</td>
-                    <td class="d-none d-lg-table-cell">20%</td>
-                    <td><span class="badge badge-pill bg-success text-light">Done</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 76</td>
-                    <td class="d-none d-lg-table-cell">17 Feb 2021</td>
-                    <td class="d-none d-lg-table-cell">20%</td>
-                    <td><span class="badge badge-pill bg-success text-light">Done</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 77</td>
-                    <td class="d-none d-lg-table-cell">18 Feb 2021</td>
-                    <td class="d-none d-lg-table-cell">20%</td>
-                    <td><span class="badge badge-pill bg-warning text-light">process</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 75</td>
-                    <td class="d-none d-lg-table-cell">19 Feb 2021</td>
-                    <td class="d-none d-lg-table-cell">20%</td>
-                    <td><span class="badge badge-pill bg-success text-light">Done</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 76</td>
-                    <td class="d-none d-lg-table-cell">20 Feb 2021</td>
-                    <td class="d-none d-lg-table-cell">20%</td>
-                    <td><span class="badge badge-pill bg-danger text-light">failed</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 77</th>
-                    <td class="d-none d-lg-table-cell">21 Feb 2021</th>
-                    <td class="d-none d-lg-table-cell">20%</th>
-                    <td><span class="badge badge-pill bg-success text-light">Done</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 75</th>
-                    <td class="d-none d-lg-table-cell">22 Feb 2021</th>
-                    <td class="d-none d-lg-table-cell">20%</th>
-                    <td><span class="badge badge-pill bg-danger text-light">failed</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 76</th>
-                    <td class="d-none d-lg-table-cell">23 Feb 2021</th>
-                    <td class="d-none d-lg-table-cell">20%</th>
-                    <td><span class="badge badge-pill bg-success text-light">Done</span></td>
-                    <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>  
-          </div>
-         </div>
-         
-         <div class="col-12 col-lg-8">     
-          <div class="card">
-            <div class="card-header">
-                <h3>F.A.Q.</h3>
-            </div>    
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Come aggiungere un nuovo utente?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                     <span>Clicca sul + in alto nella sezione blu.</span>
+        
+          <div class="container-fluid">
+            <div class="row">              
+              <div class="col-12 col-lg-7">
+                <div class="card">
+                  <div class="card-header">
+                      <h3>Prossime classi</h3>
+                  </div>
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="col-5">Nome</th>
+                          <th scope="col" class="col-2 d-none d-lg-table-cell">Data Inizio</th>
+                          <th scope="col" class="col-1 d-none d-lg-table-cell">ROI</th>
+                          <th scope="col" class="col-2">Stato</th>
+                          <th scope="col" class="col-3">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 75</td>
+                          <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                          <td class="d-none d-lg-table-cell">20%</td>
+                          <td><span class="badge badge-pill bg-success text-light">Done</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 76</td>
+                          <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                          <td class="d-none d-lg-table-cell">20%</td>
+                          <td><span class="badge badge-pill bg-success text-light">Done</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 77</td>
+                          <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                          <td class="d-none d-lg-table-cell">20%</td>
+                          <td><span class="badge badge-pill bg-warning text-light">process</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 75</td>
+                          <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                          <td class="d-none d-lg-table-cell">20%</td>
+                          <td><span class="badge badge-pill bg-success text-light">Done</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 76</td>
+                          <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                          <td class="d-none d-lg-table-cell">20%</td>
+                          <td><span class="badge badge-pill bg-danger text-light">failed</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 77</th>
+                          <td class="d-none d-lg-table-cell">21 Feb 2021</th>
+                          <td class="d-none d-lg-table-cell">20%</th>
+                          <td><span class="badge badge-pill bg-success text-light">Done</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 75</th>
+                          <td class="d-none d-lg-table-cell">22 Feb 2021</th>
+                          <td class="d-none d-lg-table-cell">20%</th>
+                          <td><span class="badge badge-pill bg-danger text-light">failed</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"> <img src="img/class-avatar.jpg" alt="" id="avatar-logo"> Classe 76</th>
+                          <td class="d-none d-lg-table-cell">23 Feb 2021</th>
+                          <td class="d-none d-lg-table-cell">20%</th>
+                          <td><span class="badge badge-pill bg-success text-light">Done</span></td>
+                          <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  
+                </div>
+            
+                <div class="card">
+                  <div class="card-header">
+                      <h3>F.A.Q.</h3>
+                  </div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Come aggiungere un nuovo utente?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <span>Clicca sul + in alto nella sezione blu.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span>Clicca sull'icona della campanella.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <span>Clicca sull'icona della campanella</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Come posso accedere alle informazioni del mio account?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <span>Clicca sull'icona della campanella.</span>
-                  </div>
+            
+              
+            
+
+
+                              
+            <div class="col-12 col-lg-5">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Todo</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Kickoff nuove classi
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Lezione su Bootstrap 5 in classe #75
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Controllare username github studenti
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Posso usare questa dashboard da mobile?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span>Clicca sull'icona della campanella</span>
-                  </div>
+            
+          
+          
+
+              <div class="card">
+                <div id="stats-img">
+                  <img src="img/stats.jpeg" alt="stats">
                 </div>
-              </div>
-            </div>
-          </div>
-         </div>
-
-
-
-         
-         <div class="col-12 col-lg-4">
-            <div class="card">   
-              <div class="card-header">
-                <h3>Todo</h3>
-              </div>
-              <div class="card-body">
+                <div class="card-header">
+                  <h4>Utenti attivi</h4>
+                  <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                </div>
                 <ul class="list-group">
                   <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      Kickoff nuove classi
+                      Gennaio: 1200
                   </li>
                   <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      Lezione su Bootstrap 5 in classe #75
+                      Febbraio: 800
                   </li>
                   <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      Controllare username github studenti
+                      Marzo 1500
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">Visualizza report approfondito</a>
                   </li>
                 </ul>
-              </div> 
+              </div>
+            </div>  
+
           </div>
-         </div>
-
-
-         <div class="col12 col-lg-4">
-          <div class="card">
-            <div id="stats-img">
-              <img src="img/stats.jpeg" alt="stats">
-            </div>
-            <div class="card-header">
-              <h4>Utenti attivi</h4>
-              <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
-            </div>
-              <ul class="list-group">
-                <li class="list-group-item">
-                    Gennaio: 1200
-                </li>
-                <li class="list-group-item">
-                    Febbraio: 800
-                </li>
-                <li class="list-group-item">
-                    Marzo 1500
-                </li>
-                <li class="list-group-item">
-                  <a href="#">Visualizza report approfondito</a>
-                </li>
-              </ul>
-          </div>
-
-
-         </div>
+          
 
 
 
 
         </div>
-        </div>
-        
-    
       </main>
     </div>
 

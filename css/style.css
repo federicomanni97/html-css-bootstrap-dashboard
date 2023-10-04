@@ -25,11 +25,11 @@ header{
     height: 55px;
 }
 
-#big-logo img{
+#big-logo{
     width: 150px;
 }
 
-#logo-small img{
+#logo-small{
     height: 40px;
 }
 
@@ -57,6 +57,10 @@ main{
     display: flex;
 }
 
+.card{
+    margin-top: 20px;
+}
+
 #sidebar{
     width: 150px;
     height: 100%;
@@ -67,19 +71,6 @@ main{
 #main-content{
     width: 100%;
     overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.sizing-1{
-    width: 10%;
-}
-
-.sizing-2{
-    width: 80%;
-}
-
-.sizing-3{
-    width: 10%;
 }
 
 li{
