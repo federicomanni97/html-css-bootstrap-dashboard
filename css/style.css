@@ -79,15 +79,10 @@ li{
 
 /* Search bar */
 
-.search{
-    position: relative;
-}
-
 .search .fa-search{
-    position: absolute;
-    top: 11px;
-    left: 20px;
-}
+    padding: 5px;
+
+} 
 
 .fa-plus{
     border: 1px solid var(--color-bg-search-bar);
